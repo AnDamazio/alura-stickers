@@ -13,7 +13,7 @@ public class App {
 
         //fazer uma conexão HTTP e buscar os top 250 filmes
 
-        String url = "https://imdb-api.com/en/API/Top250Movies/k_jy06knz2";
+        String url = "https://imdb-api.com/en/API/Top250Movies/key";
         URI address = URI.create(url);
         var client = HttpClient.newHttpClient();
         var request = HttpRequest.newBuilder(address).GET().build();
